@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Alternatives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="update()">
+    <h2 id="alternatesBackButton" onclick="back()"> &#10154; </h2>
+    <h1 class="header">Better Alternatives</h1>
+    <hr>
+    <div class="selectors">
+        <input type="checkbox" id="firstCheckBox">
+        <h3 class="selectorLabel">Burning Fossil Fuels</h3>
+        <br>
+        <input type="checkbox" id="secondCheckBox">
+        <h3 class="selectorLabel">Livestock Farming</h3>
+        <br>
+        <input type="checkbox" id="thirdCheckBox">
+        <h3 class="selectorLabel">Deforestation</h3>
+        <br>
+        <input type="checkbox" id="fourthCheckBox">
+        <h3 class="selectorLabel">Solar Radiation</h3>
+        <br>
+        <input type="checkbox" id="fifthCheckBox">
+        <h3 class="selectorLabel">Overpopulation</h3>
+        <br>
+        <br>
+        <button class="checkBoxButton" onclick="alternatesCheckBoxes()">
+            Show Alternatives
+        </button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <div id="alternateSectionPart1">
+            <div class="alternateSectionItem1 alternateSectionItem" id="alternateSectionItem1">
+                <h4 class="oldSectionSemiHeader">
+                    Burning Fossil Fuels
+                </h4>
+                <h4 class="alternateSectionSemiHeader">
+                    Renewable Energy
+                </h4>
+                <p class="alternateSectionBody">
+                    Instead of burning fossil fuels, we can use renewable energy, such as hydropower, solar power, and
+                    wind power.
+                </p>
+            </div>
+            <div class="alternateSectionItem2 alternateSectionItem" id="alternateSectionItem2">
+                <h4 class="oldSectionSemiHeader">
+                    Livestock Farming
+                </h4>
+                <h4 class="alternateSectionSemiHeader">
+                    Seaweed
+                </h4>
+                <p class="alternateSectionBody">
+                    The University of California has discovered that giving cows seaweed for 1% of their diet reduces the amount of methane by 60%. 
+                </p>
+            </div>
+        </div>
+        <div id="alternateSectionPart2">
+            <div class="alternateSectionItem3 alternateSectionItem" id="alternateSectionItem3">
+                <h4 class="oldSectionSemiHeader">
+                    Deforestation
+                </h4>
+                <h4 class="alternateSectionSemiHeader">
+                    Afforestation
+                </h4>
+                <p class="alternateSectionBody">
+                    Instead of deforestation, lets plant more trees. We can also use less wood products, such as paper.
+                </p>
+            </div>
+            <div class="alternateSectionItem4 alternateSectionItem" id="alternateSectionItem4">
+                <h4 class="oldSectionSemiHeader">
+                    Solar Radiation
+                </h4>
+                <h4 class="alternateSectionSemiHeader">
+                    Injecting Particles & More
+                </h4>
+                <p class="alternateSectionBody">
+                    Two ways we can reduce solar radiation is by injecting particles and putting sunshades in space.
+                </p>
+            </div>
+            <div class="alternateSectionItem5 alternateSectionItem" id="alternateSectionItem5">
+                <h4 class="oldSectionSemiHeader">
+                    Overpopulation
+                </h4>
+                <h4 class="alternateSectionSemiHeader">
+                    Poverty and Child Labor
+                </h4>
+                <p class="alternateSectionBody">
+                    Reducing poverty and child labor could be useful to reduce overpopulation.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="alternates.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+:root {
+    --backgroundColor: lightblue;
+    --borderColor: blue;
+    --sectionColor: cadetblue;
+    --textColor: black;
+}
+
+body {
+    text-align: center;
+    background-color: var(--backgroundColor);
+    color: var(--textColor) !important;
+}
+
+.header {
+    margin: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: clamp(1rem, 10vw, 3rem);
+}
+
+.settings {
+    float: center;
+    cursor: pointer;
+    transition: all .1s ease-in;
+    margin: 0;
+}
+
+.settings:hover {
+    font-size: 150%;
+}
+
+q {
+    font-size: clamp(.7rem, 2.25vw, 1.25rem);
+    font-style: italic;
+}
+
+b {
+    margin: 0 auto;
+}
+
+.quote {
+    width: 20vw;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+    background-color: var(--sectionColor);
+    border: .5vw var(--borderColor) solid;
+    border-radius: 5%;
+}
+
+.quote>h3 {
+    font-size: clamp(.49rem, 2.3vw, 1.2rem);
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+.firstQuote {
+    float: left;
+}
+
+.firstQuote>q {
+    font-size: clamp(.52rem, 2.2vw, 1.2rem);
+}
+
+.secondQuote {
+    float: right;
+}
+
+br {
+    user-select: none;
+}
+
+.info,
+.causesDiv,
+.effectsDiv {
+    width: 20vw;
+    height: 50vh;
+    margin: 0 auto;
+    border-radius: clamp(20px, 15px, 5px);
+    background-color: var(--sectionColor);
+    border: 1vw var(--borderColor) solid;
+    text-align: center;
+    overflow: hidden;
+}
+
+.causesDiv {
+    float: left;
+    transform: translateY(-100%);
+}
+
+.effectsDiv {
+    float: right;
+    transform: translateY(-100%);
+}
+
+.infoHeader,
+.causesHeader,
+.effectsHeader,
+.greenhouseHeader,
+.greenhouseListHeader,
+.causesSectionHeader,
+.conclusionHeader {
+    font-size: clamp(.8rem, 2vw, 1.5rem);
+}
+
+h3.causesHeader,
+h3.effectsHeader {
+    font-size: clamp(.7rem, 1.95vw, 1.25rem);
+}
+
+.greenhouseHeader,
+.greenhouseListHeader {
+    font-size: clamp(.8rem, 2vw, 1.5rem);
+}
+
+.infoBody,
+.causesList,
+.effectsList,
+.greenhouseBody,
+.greenhouseList {
+    font-size: clamp(.75rem, 2.5vw, 1.25rem);
+}
+
+.greenhouseBody,
+.greenhouseList {
+    font-size: clamp(.75rem, 2.5vw, 1.25rem);
+}
+
+.causesScroll,
+.effectsScroll {
+    transition: all .1s ease-out;
+    font-size: clamp(.8rem, 3vw, 1.2rem);
+}
+
+.causesScroll:hover,
+.effectsScroll:hover {
+    font-size: clamp(.9rem, 3.5vw, 1.5rem);
+    cursor: pointer;
+}
+
+.moreInfoButton,
+.checkBoxButton {
+    margin: 0 auto;
+    padding: 0;
+    font-weight: bold;
+    color: var(--textColor);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10%;
+    border-width: .5rem;
+    border-style: solid;
+    background-color: var(--sectionColor);
+    border-color: var(--borderColor);
+    transition: all .1s ease-in;
+    height: clamp(4rem, 5vh, 6rem);
+    width: clamp(5rem, 15vw, 10rem);
+    font-size: clamp(.5rem, .9rem, 1.25rem);
+    overflow-wrap: break-word;
+}
+
+.moreInfoButton:hover,
+.checkBoxButton:hover {
+    font-size: clamp(.6rem, 1rem, 1.3rem);
+}
+
+.infoImg,
+.causesImg,
+.effectsImg {
+    width: 15vw;
+    border-radius: 15px;
+    user-select: none;
+}
+
+.backButton {
+    font-size: 200%;
+    transform: rotate(180deg);
+    margin: 0 auto;
+    cursor: pointer;
+    user-select: none;
+}
+
+#alternatesBackButton {
+    font-size: 200%;
+    float: left;
+    transform: rotate(180deg);
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.backLabel {
+    font-size: 150%;
+    margin: 0 auto;
+}
+
+.causesSectionItem,
+.alternateSectionItem,
+.effectsSectionItem {
+    background-color: var(--sectionColor);
+    border: .5vw var(--borderColor) solid;
+    margin-top: .7%;
+    margin-left: .5%;
+    margin-right: .5%;
+    border-radius: 5%;
+    width: 25vw;
+}
+
+.effectsSectionItem {
+    width: 20vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.alternateSectionItem {
+    display: none;
+}
+
+#causesSectionPart1,
+#causesSectionPart2,
+#causesSectionPart3,
+#causesSectionPart4,
+#alternateSectionPart1,
+#alternateSectionPart2,
+#alternateSectionPart3,
+#effectsSectionPart1,
+#effectsSectionPart2,
+#effectsSectionPart3 {
+    display: flex;
+    justify-content: center;
+}
+
+.causesSectionSemiHeader,
+.oldSectionSemiHeader,
+.alternateSectionSemiHeader,
+.effectsSectionSemiHeader {
+    font-size: clamp(.6rem, 2.5vw, 1.5rem);
+}
+
+.oldSectionSemiHeader {
+    margin: 0;
+    text-decoration: line-through;
+}
+
+.alternateSectionSemiHeader {
+    margin: 0;
+}
+
+.causesSectionItem3 .causesSectionSemiHeader,
+.causesSectionItem5 .causesSectionSemiHeader {
+    font-size: clamp(.6rem, 2.5vw, 1.5rem);
+}
+
+.causesSectionBody,
+.alternateSectionBody,
+.effectsSectionBody {
+    font-size: clamp(.7rem, 2vw, 1.25rem);
+}
+
+.selectorLabel {
+    margin: 0;
+    display: inline;
+    font-size: clamp(.8rem, 2vw, 1.25rem);
+}
+
+.conclusionBody {
+    max-width: 40vw;
+    margin: 0 auto;
+    font-size: clamp(.8rem, 2vw, 1.25rem);
+}
+
+
+.scrollToTheTop {
+    position: sticky;
+    bottom: 20px;
+    left: 20px;
+    width: fit-content;
+    height: clamp(1.25rem, 3.5vw, 1.5rem);;
+    font-size: clamp(.8rem, 3vw, 1.2rem);
+    background-color: var(--sectionColor);
+    border-radius: 100vw;
+    cursor: pointer;
+    transition: .5s ease-in;
+    padding: 1vw;
+}
+
+.scrollToTheTop:hover {
+    font-size: clamp(1rem, 3.25vw, 1.5rem);
+}

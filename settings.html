@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Settings Tab</title>
+</head>
+
+<body onload="update()">
+    <h1 class="header">
+        Settings
+    </h1>
+    <h2 class="backButton" onclick="back()">
+        &#x27AA
+    </h2>
+    <h2 class="backLabel">
+        Back
+    </h2>
+    <hr>
+    <h3>
+        Background Color -
+        <input type="color" value="#add8e6" id="backgroundColorSetting" onchange="onChange()">
+    </h3>
+    <h3>
+        Border Color -
+        <input type="color" value="#0000ff" id="borderColorSetting" onchange="onChange()">
+    </h3>
+    <h3>
+        Section Color -
+        <input type="color" value="#5f9ea0" id="sectionColorSetting" onchange="onChange()">
+    </h3>
+    <h3>
+        Text Color -
+        <input type="color" value="#000000" id="textColorSetting" onchange="onChange()">
+    </h3>
+    <script src="settings.js"></script>
+</body>
+
+</html>

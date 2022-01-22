@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Climate Change
+    </title>
+</head>
+
+<body onload="update()">
+    <h1 class="header" id="header">
+        Climate Change
+    </h1>
+    <h3 class="settings" onclick="settings()">&#9881 Settings</h3>
+    <hr>
+    <div class="firstQuote quote">
+        <q>We have a <b> single </b> mission: to <b> protect </b> and <b> hand </b> on the <b> planet </b> to
+            the next generation.</q>
+        <h3>- François Hollande </h3>
+    </div>
+    <div class="secondQuote quote">
+        <q><b>We </b> are <b> living </b> on this <b> planet </b> as if we had <b> another one </b> to <b> go</b>
+            to.</q>
+        <h3>- Terri Swearingen </h3>
+    </div>
+    <div class="thirdQuote quote">
+        <q>The <b>future</b> depends on what <b>you</b> do <b>today</b>.</q>
+        <h3>- Mahatma Gandhi </h3>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="info">
+        <h3 class="infoHeader">What is Climate Change?</h3>
+        <p class="infoBody">
+            Climate change is the warming of the planet and the change in the weather patterns that
+            define Earth's climate.
+        </p>
+        <img class="infoImg" src="InfoCardImg.jpg">
+        <br>
+    </div>
+    <div class="causesDiv">
+        <h2 class="causesHeader"> Causes of Climate Change</h2>
+        <p class="causesList">
+            • Burning Fossil Fuels
+            <br>
+            • Livestock Farming
+            <br>
+            • Deforestation
+            <br>
+            • Solar Radiation
+            <br>
+            • Overpopulation
+        </p>
+        <h3 class="causesScroll" onclick="scrollCauses()">
+            Click For More Details
+        </h3>
+        <img src="CausesImg.jpg" class="causesImg">
+    </div>
+    <div class="effectsDiv">
+        <h3 class="effectsHeader"> Effects of Climate Change</h3>
+        <p class="effectsList">
+            • Melting Ice/Higher Sea Levels
+            <br>
+            • Warming Oceans
+            <br>
+            • More Extreme Storms
+            <br>
+            • Harder Farming
+            <br>
+            • Affecting People's Health
+        </p>
+        <h3 class="effectsScroll" onclick="scrollEffects()">
+            Click For More Details
+        </h3>
+        <img src="EffectsImg.jpg" class="effectsImg">
+    </div>
+    <br>
+    <h3 class="greenhouseHeader">The Greenhouse Effect</h3>
+    <p class="greenhouseBody">
+        The greenhouse effect is the way that the Earth heats up. When solar radiation reaches the atmosphere, a
+        part of the radiation is re-radiated by greenhouse gases. The energy heats the Earth's surface and the
+        atmosphere.
+    </p>
+    <h3 class="greenhouseListHeader">The Greenhouse Gases</h3>
+    <p class="greenhouseList">
+        • Carbon Dioxide (CO <sub>2</sub>)
+        <br>
+        • Methane (CH <sub>4</sub>)
+        <br>
+        • Nitrous Oxide (N <sub>2</sub> O)
+        <br>
+        • Water Vapor (H <sub>2</sub> O)
+    </p>
+    <hr>
+    <h2 class="causesHeader">
+        Causes Section
+    </h2>
+    <h3 class="causesHeader">
+        How the Climate is Warming
+    </h3>
+    <div id="causesSectionPart1">
+        <div class="causesSectionItem1 causesSectionItem">
+            <h4 class="causesSectionSemiHeader">
+                Burning Fossil Fuels
+            </h4>
+            <p class="causesSectionBody">
+                We burn fossil fuels for fuel. Burning fossil fuels releases carbon
+                dioxide, which is a greenhouse gas.
+            </p>
+            <br>
+        </div>
+        <div class="causesSectionItem2 causesSectionItem">
+            <h4 class="causesSectionSemiHeader">
+                Livestock Farming
+            </h4>
+            <p class="causesSectionBody">
+                Livestock farming affects climate change because livestock such as cattle, pigs, sheep, and goats emit
+                carbon dioxide and methane, both greenhouse gases.
+            </p>
+        </div>
+    </div>
+    <div id="causesSectionPart2">
+        <div class="causesSectionItem3 causesSectionItem">
+            <h4 class="causesSectionSemiHeader">
+                Deforestation
+            </h4>
+            <p class="causesSectionBody">
+                Deforestation is the removal of trees from the land. However, trees take in carbon dioxide from the air
+                and releases oxygen. As a result, more carbon dioxide is in the air.
+            </p>
+        </div>
+        <div class="causesSectionItem4 causesSectionItem">
+            <h4 class="causesSectionSemiHeader">
+                Solar Radiation
+            </h4>
+            <p class="causesSectionBody">
+                Solar radiation adds more heat to the Earth, especially to the poles. This causes ice sheets to melt and
+                adds to global warming.
+            </p>
+            <br>
+        </div>
+    </div>
+    <div id="causesSectionPart3">
+        <div class="causesSectionItem5 causesSectionItem">
+            <h4 class="causesSectionSemiHeader">
+                Overpopulation
+            </h4>
+            <p class="causesSectionBody">
+                Overpopulation means more people. More people means more demand for oil and fuel, which means more
+                carbon dioxide in the atmosphere.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button class="moreInfoButton" onclick="alternate()">Better Alternatives</button>
+    <br>
+    <hr>
+    <h2 class="effectsHeader">
+        Effects Section
+    </h2>
+    <h3 class="effectsHeader">
+        What Will Happen to Earth
+    </h3>
+    <br>
+    <div id="effectsSectionPart1">
+        <div class="effectsSectionItem1 effectsSectionItem">
+            <h4 class="effectsSectionSemiHeader">
+                Melting Ice/Higher Sea Levels
+            </h4>
+            <p class="effectsSectionBody">
+                The warming climate will make ice sheets in Antarctica and Greenland will melt, causing the oceans to have higher sea levels and sending floods in coastal cities.
+            </p>
+            <img src="https://images.unsplash.com/photo-1623555108907-61bf5fbd8395?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVsdGluZyUyMGljZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                class="effectsImg">
+        </div>
+        <div class="effectsSectionItem2 effectsSectionItem">
+            <h4 class="effectsSectionSemiHeader">
+                Warming Oceans
+            </h4>
+            <p class="effectsSectionBody">
+                Climate change will cause the oceans to warm, affecting the creatures of the ocean ecosystems.
+            </p>
+            <img src="https://images.unsplash.com/photo-1494459940152-1e911caa8cc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FybSUyMG9jZWFufGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                class="effectsImg">
+        </div>
+        <div class="effectsSectionItem3 effectsSectionItem">
+            <h4 class="effectsSectionSemiHeader">
+                More Extreme Storms
+            </h4>
+            <p class="effectsSectionBody">
+                The warming of the Earth is going to make more moisture in the air, meaning more rainfall. Droughts, heat waves, and hurricanes will also grow in strength and intensity.
+            </p>
+            <img src="https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3Rvcm1zfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                class="effectsImg">
+        </div>
+    </div>
+    <div id="effectsSectionPart2">
+        <div class="effectsSectionItem4 effectsSectionItem">
+            <h4 class="effectsSectionSemiHeader">
+                Harder Farming
+            </h4>
+            <p class="effectsSectionBody">
+                The climate will cause higher temperatures, eventually reducing yields of crops. It will also help weeds and pests.
+            </p>
+            <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmFybWluZ3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                class="effectsImg">
+            <br>
+        </div>
+        <div class="effectsSectionItem5 effectsSectionItem">
+            <h4 class="effectsSectionSemiHeader">
+                Affecting People's Health
+            </h4>
+            <p class="effectsSectionBody">
+                Climate change will increase the chances of breathing and heart diseases, as well as premature deaths.
+            </p>
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGVhbHRofGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                class="effectsImg">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h3 class="conclusionHeader">
+        Conclusion
+    </h3>
+    <p class="conclusionBody">
+        This is how climate change is affecting our world, mostly because of us. Anyone can help to stop climate change, including you! Many fundraisers have raised money to halt global warming.  Lets stop this threat to Earth, as we don't have another one!
+    </p>
+
+    <div class="scrollToTheTop" id="scrollToTheTop" onclick="scrollToTheTop()">Scroll to the Top</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
